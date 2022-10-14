@@ -26,6 +26,11 @@
             <Setter Property="CornerRadius" Value="5"/>
             <Setter Property="Margin" Value="10"/>
         </Style>
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="Height" Value="90"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -82,7 +87,7 @@
                     <DropShadowEffect/>
                 </Border.Effect>
                 <StackPanel Orientation="Horizontal">
-                    <GroupBox Height="90" Width="150" Margin="10" Header="Aficiones">
+                    <GroupBox Header="Aficiones">
                         <StackPanel>
                             <CheckBox>Hacer deporte</CheckBox>
                             <CheckBox>Viajar</CheckBox>
@@ -90,7 +95,7 @@
                             <CheckBox>Leer comics</CheckBox>
                         </StackPanel>
                     </GroupBox>
-                    <GroupBox Height="90" Width="150" Header="Estado civil">
+                    <GroupBox Header="Estado civil">
                         <StackPanel>
                             <RadioButton IsChecked="True">Soltero</RadioButton>
                             <RadioButton>Casado</RadioButton>
